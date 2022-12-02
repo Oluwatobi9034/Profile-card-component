@@ -1,0 +1,82 @@
+:root {
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 18px;
+    background-color: var(--Dark-cyan);
+    text-align: center;
+    line-height: 1.5rem;
+    font-weight: 400;
+    color: var(--Dark-grayish-blue);
+
+    background-image: url(../images/bg-pattern-top.svg),
+    url(../images/bg-pattern-bottom.svg);
+    background-position: bottom -65% left -84%, right -75% bottom 199%;
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: var(--white);
+}
+
+.container .card-pattern{
+    width: 100%;
+}
+
+.container .profile-picture {
+    border: 5px solid var(--white);
+    border-radius: 50%;
+    margin-top: -60px;
+    margin-bottom: 10px;
+}
+
+.border-line {
+    border-bottom: 1px solid var(--Dark-gray);
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.details {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 1.5em 1.2em;
+}
+
+
+.name, .counts  {
+    font-weight: 700;
+    color: var(--Very-dark-desaturated-blue);
+}
+
+span {
+    color: var(--Dark-grayish-blue);
+}
+
+/* @media only screen and (min-width: 616px) {
+    body {
+        background-image: url(../images/bg-pattern-top.svg),
+        url(../images/bg-pattern-bottom.svg);
+        background-position: bottom -65% left -84%, right -75% bottom 199%;
+        background-repeat: no-repeat;
+    }
+    
+}  */
