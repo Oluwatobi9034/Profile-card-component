@@ -17,22 +17,23 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    font-size: 18px;
-    background-color: var(--Dark-cyan);
-    text-align: center;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 12px;
     line-height: 1.5rem;
     font-weight: 400;
+    text-align: center;
+    
     color: var(--Dark-grayish-blue);
-
+    background-color: var(--Dark-cyan);
     background-image: url(../images/bg-pattern-top.svg),
     url(../images/bg-pattern-bottom.svg);
-    background-position: bottom -65% left -84%, right -75% bottom 199%;
     background-repeat: no-repeat;
+    background-position: right 51vw bottom 34vh, left 48vw top 52vh;
 }
 
 .container {
     width: 100%;
-    max-width: 350px;
+    max-width: 320px;
     border-radius: 10px;
     overflow: hidden;
     background-color: var(--white);
@@ -64,19 +65,11 @@ body {
 
 .name, .counts  {
     font-weight: 700;
+    font-size: 18px;
     color: var(--Very-dark-desaturated-blue);
 }
 
 span {
     color: var(--Dark-grayish-blue);
+    font-weight: 400;
 }
-
-/* @media only screen and (min-width: 616px) {
-    body {
-        background-image: url(../images/bg-pattern-top.svg),
-        url(../images/bg-pattern-bottom.svg);
-        background-position: bottom -65% left -84%, right -75% bottom 199%;
-        background-repeat: no-repeat;
-    }
-    
-}  */
